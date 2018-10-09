@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 import { general } from 'styles';
 import styles from './styles';
 
-const imgDog = require('../../res/marca.png');
-const imgCat = require('../../res/marca.png');
+const imgDog = require('../../res/dog.png');
+const imgCat = require('../../res/cat.png');
 
 class Main extends Component {
   render() {
