@@ -10,8 +10,8 @@ const img = require('../../res/marca.png');
 
 class Login extends Component {
   state = {
-    login: null,
-    password: null,
+    login: 'teste',
+    password: 'teste',
     loading: false,
   }
 
