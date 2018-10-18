@@ -3,7 +3,7 @@ import { general, colors, metrics } from 'styles';
 
 const styles = StyleSheet.create({
   header: {
-    height: 200,
+    height: 150,
     alignItems: 'center',
     backgroundColor: colors.white,
   },

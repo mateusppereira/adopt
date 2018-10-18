@@ -9,6 +9,7 @@ export default {
     flexDirection: 'row',
   },
   input: {
+    paddingHorizontal: metrics.basePadding / 2,
     backgroundColor: colors.white,
     borderRadius: metrics.baseRadius,
     height: 44,
@@ -17,20 +18,12 @@ export default {
     elevation: 2,
   },
   box: {
-    flexDirection: 'row',
-    alignItems: 'center',
     padding: metrics.basePadding,
     backgroundColor: colors.white,
-    borderRadius: metrics.baseRadius,
-    marginVertical: metrics.baseMargin / 2,
-    marginHorizontal: metrics.baseMargin,
-    // shadow
-    elevation: 4,
-    shadowOpacity: 0.75,
-    shadowColor: colors.dark,
-    shadowRadius: metrics.baseRadius,
-    shadowOffset: { height: 0, width: 0 },
-    // shadow
+  },
+  separator :{
+    height: 1,
+    backgroundColor: colors.light,
   },
   buttonText: {
     fontSize: 16,
@@ -50,12 +43,13 @@ export default {
     flexDirection: 'row',
     marginVertical: metrics.baseMargin / 2,
   },
-  itemInfoKey: {
+  textKey: {
     fontWeight: 'bold',
     fontSize: 14,
-    marginHorizontal: metrics.baseMargin / 2,
+    marginRight: metrics.baseMargin / 2,
   },
-  itemInfoValue: {
+  textValue: {
+    fontSize: 14,
     flex: 1,
   },
 };

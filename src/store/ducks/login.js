@@ -16,7 +16,6 @@ export const INITIAL_STATE = {
 };
 
 export default function login(state = INITIAL_STATE, action) {
-  console.tron.log(action);
   switch (action.type) {
   case Types.CALL_LOGIN:
     return {

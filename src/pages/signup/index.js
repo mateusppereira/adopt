@@ -10,13 +10,13 @@ const img = require('../../res/marca.png');
 
 class Signup extends Component {
   state = {
-    email: 'teste',
-    name: 'teste',
-    username: 'teste',
-    password: 'teste',
-    passwordCheck: 'teste',
-    phone: 'teste',
-    document: 'teste',
+    email: null,
+    name: null,
+    username: null,
+    password: null,
+    passwordCheck: null,
+    phone: null,
+    document: null,
   }
 
   doSignup = () => {
@@ -42,37 +42,37 @@ class Signup extends Component {
           <ScrollView style={styles.form}>
             <TextInput style={general.input}
               value={this.state.email}
-              placeholder="email"
+              placeholder="Email"
               onChangeText={email => this.setState({ email })}
             />
             <TextInput style={general.input}
               value={this.state.name}
-              placeholder="nome"
+              placeholder="Nome"
               onChangeText={name => this.setState({ name })}
             />
             <TextInput style={general.input}
               value={this.state.username}
-              placeholder="usuário"
+              placeholder="Usuário"
               onChangeText={username => this.setState({ username })}
             />
             <TextInput style={general.input}
               value={this.state.password}
-              placeholder="senha"
+              placeholder="Senha"
               onChangeText={password => this.setState({ password })}
             />
             <TextInput style={general.input}
               value={this.state.passwordCheck}
-              placeholder="confirme sua senha"
+              placeholder="Confirme sua senha"
               onChangeText={passwordCheck => this.setState({ passwordCheck })}
             />
             <TextInput style={general.input}
               value={this.state.document}
-              placeholder="document"
+              placeholder="CPF"
               onChangeText={document => this.setState({ document })}
             />
             <TextInput style={general.input}
               value={this.state.phone}
-              placeholder="celular"
+              placeholder="Celular"
               onChangeText={phone => this.setState({ phone })}
             />
           </ScrollView>

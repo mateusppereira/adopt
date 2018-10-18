@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ActivityIndicator, Image, StatusBar, Text, TextInput, TouchableOpacity, View } from 'react-native';
-import { colors, general } from 'styles';
+import { colors, general, metrics } from 'styles';
 import { connect } from 'react-redux';
 import { Creators as LoginActions } from 'store/ducks/login';
 import { bindActionCreators } from 'redux';
@@ -15,8 +15,11 @@ class Login extends Component {
     loading: false,
   }
 
+  doSignUp = () => {
+    this.props.navigation.navigate('Signup')
+  }
+
   doLogin = () => {
-    // this.props.navigation.navigate('Signup')
     this.props.LoginActions.callLogin(this.state.login, this.state.password, this.props.navigation)
   }
 
@@ -28,7 +31,10 @@ class Login extends Component {
           <Image resizeMode="contain" source={img} style={{width: '80%', height: 200}} />
         </View>
         <View style={styles.body}>
-          <View style={[general.box, { flexDirection: 'column' }]}>
+          <View style={[general.box, { flexDirection: 'column', elevation: 5, marginHorizontal: metrics.baseMargin, borderRadius: 5 }]}>
+            <TouchableOpacity onPress={this.doSignUp}>
+              <Text style={styles.textSignup}>Fazer cadastro</Text>
+            </TouchableOpacity>
             <TextInput
               style={styles.input}
               placeholder="Login"

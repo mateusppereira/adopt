@@ -20,7 +20,6 @@ export function* callLogin(action) {
       if (response.data.hasErrors) {
         yield put(LoginActions.failureLogin(response.data.message));      
       }
-      console.tron.log(navigation);
       if (navigation) {
         yield call(navigation.navigate, 'Main');
       }
