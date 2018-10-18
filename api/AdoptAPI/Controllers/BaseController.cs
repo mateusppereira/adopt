@@ -7,8 +7,6 @@ namespace AdoptAPI.Controllers
 {
     public class BaseController : ApiController
     {
-        protected Token Token { get; set; }
-
         protected HttpResponseMessage GetResponseFromResults(HttpStatusCode status, string message, object item)
         {
             return Request.CreateResponse(status, Helper.CreateResponse(false, message, item));
@@ -29,11 +27,6 @@ namespace AdoptAPI.Controllers
         protected HttpResponseMessage GetResponseFromGeneralBadRequest(string method, string message)
         {
             return Request.CreateResponse(HttpStatusCode.BadRequest, Helper.CreateResponse(true, message, null));
-        }
-
-        protected HttpResponseMessage GetResponseFromInvalidToken()
-        {
-            return Request.CreateResponse(HttpStatusCode.BadRequest, Helper.CreateResponse(false, Token.Message, null));
         }
     }
 }

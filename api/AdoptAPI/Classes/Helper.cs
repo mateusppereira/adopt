@@ -14,21 +14,6 @@ namespace AdoptAPI.Classes
 {
     public class Helper
     {
-        public static Token GetToken(string tokenEncrypt)
-        {
-            Token token = new Token();
-            if (!string.IsNullOrEmpty(tokenEncrypt))
-            {
-                token.ValidateToken(tokenEncrypt);
-            }
-            else
-            {
-                token.IsValid = false;
-                token.Message = "Não foi enviado um token";
-            }
-            return token;
-
-        }
         public static Response CreateResponse(bool error, string message, object objectResult)
         {
             Response response = new Response();

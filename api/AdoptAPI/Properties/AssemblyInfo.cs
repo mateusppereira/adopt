@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("BlankAPI")]
-[assembly: AssemblyDescription("BlankAPI")]
+[assembly: AssemblyTitle("AdoptAPI")]
+[assembly: AssemblyDescription("AdoptAPI")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("BlankAPI")]
-[assembly: AssemblyProduct("BlankAPI")]
+[assembly: AssemblyCompany("AdoptAPI")]
+[assembly: AssemblyProduct("AdoptAPI")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
