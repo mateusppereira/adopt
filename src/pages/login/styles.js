@@ -12,6 +12,12 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
     justifyContent: 'center',
   },
+  textSignup: {
+    fontSize: 14,
+    color: colors.primary,
+    textDecorationLine: 'underline',
+    alignSelf: 'flex-end'
+  },
   input: {
     ...general.input,
     marginBottom: metrics.baseMargin,

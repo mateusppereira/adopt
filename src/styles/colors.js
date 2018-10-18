@@ -11,6 +11,8 @@ export default {
   secondary: '#000',
   success: '#81ba60',
   danger: '#dd5a5a',
+  yellow: '#FFD55A',
+  orange: '#FF6A40',
 
 
   transparent: 'transparent',
